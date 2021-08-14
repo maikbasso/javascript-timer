@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Timer.js - Maik Basso - maik@maikbasso.com.br</title>
+    <script type="text/javascript" src="Timer.js"></script>
+  </header>
+  <body>
+    <h1>Timer.js</h1>
+    <p>See example in console.</p>
+    <p>Author: Maik Basso - maik@maikbasso.com.br.</p>
+    <script type="text/javascript">
+    timer = new Timer(
+      10, 
+      function(){
+        console.log(timer.timeSeconds);
+      }, 
+      function(){
+        console.log("Fim!");
+      }
+    );
+
+    timer.start();
+    </script>
+  </body>
+</html> 
